@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --nx-bg: #07111c;
+    --nx-panel: #10232e;
+    --nx-line: rgba(205, 238, 221, .14);
+    --nx-mint: #9decc0;
+    --nx-text: #eaf5ef
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at 12% 0%, #275e4b30, transparent 36%), #07111c;
+    color: var(--nx-text);
+    font-family: 'DM Sans', sans-serif
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit
+}
+
+button {
+    cursor: pointer
+}
+
+a {
+    color: inherit
+}
+
+.hidden {
+    display: none !important
+}
+
+.nx14-topbar,
+.topbar {
+    background: #07151feF !important;
+    border-bottom: 1px solid var(--nx-line) !important;
+    backdrop-filter: blur(18px);
+    color: var(--nx-text) !important
+}
+
+.nx14-topbar {
+    padding: 12px 4vw !important
+}
+
+.nx14-chip,
+.pill {
+    border: 1px solid var(--nx-line) !important;
+    background: #ffffff0a !important;
+    color: #d5e7dd !important;
+    border-radius: 99px !important;
+    padding: 7px 12px !important
+}
+
+.gateway {
+    min-height: calc(100vh - 48px);
+    padding: 50px 4vw !important;
+    background: radial-gradient(ellipse at 20% 45%, #55c88a1c, transparent 35%), radial-gradient(ellipse at 80% 20%, #c76b9d18, transparent 28%) !important
+}
+
+.gateway-card {
+    width: min(1160px, 100%) !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 30px !important;
+    background: linear-gradient(135deg, #122a34eF, #0b1b27ed) !important;
+    box-shadow: 0 35px 100px #0008 !important;
+    backdrop-filter: blur(24px);
+    overflow: hidden
+}
+
+.gateway-brand {
+    padding: clamp(30px, 5vw, 65px) !important
+}
+
+.gateway-brand h1 {
+    font: 800 clamp(42px, 6vw, 72px)/1.02 Manrope, sans-serif !important;
+    letter-spacing: -.06em
+}
+
+.gateway-brand h1 em {
+    color: var(--nx-mint) !important
+}
+
+.gateway-brand p,
+.auth-sub {
+    color: #a9beb4 !important;
+    line-height: 1.8
+}
+
+.auth {
+    background: #f4faf6 !important;
+    color: #12251e !important;
+    padding: clamp(24px, 4vw, 44px) !important
+}
+
+.auth h2 {
+    font: 800 28px Manrope !important;
+    color: #10261e !important
+}
+
+.auth .field label,
+.auth label {
+    color: #29473b !important;
+    font-weight: 700
+}
+
+.auth input {
+    border: 1px solid #d5e4db !important;
+    background: white !important;
+    color: #12251e !important;
+    border-radius: 12px !important;
+    padding: 13px !important
+}
+
+.role-tabs button,
+.cta {
+    border-radius: 12px !important
+}
+
+.role-tabs button.active,
+.cta {
+    background: linear-gradient(120deg, #a9f0c5, #63d49c) !important;
+    color: #082219 !important;
+    border: 0 !important;
+    font-weight: 800 !important
+}
+
+.gps-gate {
+    border: 1px solid #d6e9dd !important;
+    background: #eaf6ef !important;
+    border-radius: 14px !important;
+    color: #315443 !important
+}
+
+.container {
+    max-width: 1440px !important;
+    padding: 24px clamp(16px, 3vw, 42px) !important
+}
+
+.topbar {
+    padding: 16px 3vw !important
+}
+
+.logo {
+    font: 800 24px Manrope !important;
+    letter-spacing: -.04em
+}
+
+.logo span {
+    color: var(--nx-mint) !important
+}
+
+.hero {
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 26px !important;
+    background: linear-gradient(120deg, #173b36e8, #102630e8) !important;
+    padding: clamp(26px, 4vw, 52px) !important;
+    box-shadow: 0 22px 65px #0004
+}
+
+.hero h1 {
+    font: 800 clamp(34px, 5vw, 60px)/1.05 Manrope !important;
+    letter-spacing: -.055em
+}
+
+.hero p {
+    color: #bdd0c6 !important
+}
+
+.searchbar {
+    background: #071b20 !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 17px !important;
+    padding: 8px !important;
+    gap: 8px !important
+}
+
+.searchbar input,
+.searchbar select {
+    background: #112a2e !important;
+    color: white !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 11px !important;
+    padding: 12px !important
+}
+
+.searchbar button,
+.outline,
+.route {
+    border-radius: 12px !important;
+    background: var(--nx-mint) !important;
+    color: #092319 !important;
+    border: 0 !important;
+    font-weight: 800 !important;
+    padding: 12px 18px !important
+}
+
+.px-showcase,
+.panel,
+.destination-db,
+.admin-shell,
+.nx11-card,
+.nx16-card {
+    background: linear-gradient(145deg, #122b34, #0b1d27) !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 22px !important;
+    color: var(--nx-text) !important;
+    box-shadow: 0 20px 55px #0003
+}
+
+.px-showcase {
+    padding: 24px !important
+}
+
+.px-journey-card,
+.admin-stat,
+.nx11-kpi {
+    background: #ffffff08 !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 16px !important;
+    color: var(--nx-text) !important;
+    padding: 18px !important
+}
+
+.section-head h2,
+.detail-title {
+    font-family: Manrope !important;
+    letter-spacing: -.04em
+}
+
+.muted,
+.fine,
+.admin-sub,
+.nx11-muted {
+    color: #a9beb4 !important
+}
+
+.map-wrap,
+.focus-map {
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 18px !important;
+    overflow: hidden
+}
+
+.destination-card,
+.result-card,
+.db-card {
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 18px !important;
+    background: #102630 !important;
+    color: var(--nx-text) !important;
+    overflow: hidden
+}
+
+.admin-table-wrap {
+    overflow: auto;
+    border: 1px solid var(--nx-line);
+    border-radius: 16px
+}
+
+.admin-table {
+    color: var(--nx-text) !important
+}
+
+.admin-table th {
+    background: #18343b !important
+}
+
+.admin-table td {
+    border-color: var(--nx-line) !important
+}
+
+.nx14-command,
+.nx16-panel {
+    background: #102630 !important;
+    color: var(--nx-text) !important;
+    border: 1px solid var(--nx-line) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 70px #0008 !important
+}
+
+.nx14-command input {
+    background: #071820 !important;
+    color: white !important;
+    border: 1px solid var(--nx-line) !important
+}
+
+.nx16-fab {
+    background: var(--nx-mint) !important;
+    color: #092319 !important;
+    box-shadow: 0 12px 40px #8ce9b544 !important
+}
+
+.nx16-toast,
+.nx14-toast {
+    background: #baf6d1 !important;
+    color: #082219 !important;
+    border-radius: 99px !important
+}
+
+@media(max-width:760px) {
+    .gateway {
+        padding: 20px 14px !important
+    }
+
+    .gateway-card {
+        border-radius: 22px !important
+    }
+
+    .gateway-brand {
+        padding: 28px !important
+    }
+
+    .auth {
+        padding: 24px !important
+    }
+
+    .searchbar {
+        display: grid !important
+    }
+
+    .searchbar>* {
+        width: 100% !important
+    }
+
+    .top-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end
+    }
+
+    .px-journey-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *:before,
+    *:after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+    }
+}

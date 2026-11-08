@@ -1,0 +1,9 @@
+{
+  "name": "NatureX \u2014 Intelligent Nature & Travel",
+  "short_name": "NatureX",
+  "start_url": "home.html",
+  "display": "standalone",
+  "background_color": "#07111c",
+  "theme_color": "#07111c",
+  "icons": []
+}
